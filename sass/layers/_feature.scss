@@ -1,29 +1,30 @@
 .features {
     padding-top: 94px;
     padding-bottom: 94px;
-}
 
-.features__list {
-    display: flex;
-    justify-content: center;
-}
 
-.features__title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.1428571429;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--primary-text-color);
-    margin-bottom: 10px;
-}
+    &__list {
+        display: flex;
+        justify-content: center;
+    }
 
-.features__text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7142857143;
-    letter-spacing: 0.03em;
-    color: var(--secondary-text-color);
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.1428571429;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $primary-text-color;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7142857143;
+        letter-spacing: 0.03em;
+        color: $secondary-text-color;
+    }
 }
 
 .featuresTitleHidden {
@@ -42,10 +43,11 @@
 
 .features__item {
     width: 270px;
-}
 
-.features__item:not(:last-child) {
-    margin-right: 45px;
+
+    &:not(:last-child) {
+        margin-right: 45px;
+    }
 }
 
 .featuresIconItem {
@@ -53,8 +55,9 @@
     background-color: #F5F4FA;
     border-radius: 4px;
     margin-bottom: 30px;
-}
 
-.featuresIconItem:not(:last-child) {
-    margin-right: 30px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
