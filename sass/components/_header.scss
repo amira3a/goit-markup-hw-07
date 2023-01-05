@@ -1,25 +1,23 @@
 .header {
     border-bottom: 1px solid #ECECEC;
+}
 
+.header__container {
+    display: flex;
+    align-items: center;
+}
 
-    &__container {
-        display: flex;
-        align-items: center;
-    }
-
-    &__logo {
-        font-family: "Raleway";
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 31px;
-        color: $accent-color;
-        margin-right: 97px;
-    }
+.header__logo {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    color: var(--accent-color);
+    margin-right: 97px;
 }
 
 .headerNav__list {
     display: flex;
-
 }
 
 .headerNav__item:not(:last-child) {
@@ -33,47 +31,44 @@
     font-size: 14px;
     line-height: 1.1428571429;
     letter-spacing: 0.02em;
-    color: $primary-text-color;
+    color: var(--primary-text-color);
     transition-property: color;
-    transition-duration: $duration;
-    transition-timing-function: $timing-function;
+    transition-duration: var(--duration);
+    transition-timing-function: var(--timing-function);
+}
 
-
-    &:focus {
-        color: $accent-color;
-    }
+.headerNav__link:focus {
+    color: var(--accent-color);
 }
 
 .headerCurrent__link {
     position: relative;
-    color: $accent-color;
+    color: var(--accent-color);
+}
 
-
-    &::after {
-        position: absolute;
-        content: "";
-        width: 48px;
-        height: 4px;
-        background: $accent-color;
-        border-radius: 2px;
-        top: 76px;
-        left: 0px;
-    }
+.headerCurrent__link::after {
+    position: absolute;
+    content: "";
+    width: 48px;
+    height: 4px;
+    background: var(--accent-color);
+    border-radius: 2px;
+    top: 76px;
+    left: 0px;
 }
 
 .headerContacts {
     display: flex;
     margin-left: auto;
+}
 
+.headerContacts__item:not(:last-child) {
+    margin-right: 50px;
+}
 
-    &__item:not(:last-child) {
-        margin-right: 50px;
-    }
-
-    &__svg {
-        margin-right: 10px;
-        fill: currentColor;
-    }
+.headerContacts__svg {
+    margin-right: 10px;
+    fill: currentColor;
 }
 
 .headerContacts__link {
@@ -83,16 +78,13 @@
     font-size: 14px;
     line-height: 1.1428571429;
     letter-spacing: 0.03em;
-    color: $secondary-text-color;
-    transition-duration: $duration;
-    transition-timing-function: $timing-function;
+    color: var(--secondary-text-color);
+    transition-duration: var(--duration);
+    transition-timing-function: var(--timing-function);
     transition-property: color;
+}
 
-
-    &:hover,
-    &:focus {
-        color: $accent-color;
-    }
-
-
+.headerContacts__link:hover,
+.headerContacts__link:focus {
+    color: var(--accent-color);
 }

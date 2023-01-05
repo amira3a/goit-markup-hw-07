@@ -1,0 +1,31 @@
+.do {
+    padding-top: 0;
+}
+
+.do__list {
+    display: flex;
+    justify-content: center;
+}
+
+.doItem {
+    position: relative;
+}
+
+.doItem:not(:last-child) {
+    margin-right: 30px;
+}
+
+.do__box {
+    position: absolute;
+    top: 224px;
+    width: 370px;
+    background: rgba(47, 48, 58, 0.8);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1428571429;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--secondary-title-color);
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
